@@ -19,7 +19,7 @@ git clone https://github.com/griffeth-barker/Invoke-EmailDnsRecordAudit.git
 #### Option 2: Download the script directly
 Use PowerShell to download the script file directly:
 ```PowerShell
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/griffeth-barker/Invoke-EmailDnsRecordAudit/main/Invoke-EmailDnsRecordAudit.ps1" -OutFile "$($env:USERPROFILE)\Downloads\Invoke-EmailDnsRecordAudit.ps1"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/griffeth-barker/Invoke-EmailDnsRecordAudit/refs/heads/main/Invoke-EmailDnsRecordAudit.ps1" -OutFile "$($env:USERPROFILE)\Downloads\Invoke-EmailDnsRecordAudit.ps1"
 ```  
   
 ### Run the script
