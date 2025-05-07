@@ -27,17 +27,17 @@ Here are some examples of how to run the script:
 ```
 .EXAMPLE
   # Check records for a single domain, specifying DNS server by FQDN
- .\Invoke-EmailSecurityAudit.ps1 -Domains "griff.systems" -DnsServer "dns.google"
+ .\Invoke-EmailSecurityAudit.ps1 -Domains "griff.systems" -DnsServer "one.one.one.one"
 
 .EXAMPLE
   # Check records for a single domain, specifying DNS server by IP address
-  .\Invoke-EmailSecurityAudit.ps1 -Domains "griff.systems" -DnsServer "8.8.8.8"
+  .\Invoke-EmailSecurityAudit.ps1 -Domains "griff.systems" -DnsServer "1.1.1.1"
 
 .EXAMPLE
   # Check records for multiple domains, specifying DNS server by FQDN
-  .\Invoke-EmailSecurityAudit.ps1 -Domains @("griff.systems","domain.tld") -DnsServer "dns.google"
+  .\Invoke-EmailSecurityAudit.ps1 -Domains @("griff.systems","domain.tld") -DnsServer "one.one.one.one"
 
 .EXAMPLE
   # Check records for multiple domains, specifying DNS server by IP address
-  .\Invoke-EmailSecurityAudit.ps1 -Domains @("griff.systems","domain.tld") -DnsServer "8.8.8.8"
+  .\Invoke-EmailSecurityAudit.ps1 -Domains @("griff.systems","domain.tld") -DnsServer "1.1.1.1"
 ```
