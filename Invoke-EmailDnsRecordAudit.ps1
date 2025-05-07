@@ -40,11 +40,11 @@
 [CmdletBinding()]
 param (
 
-  [Parameter(Position = 0, Mandatory = $True)]
+  [Parameter(Position = 0, Mandatory = $True, ValueFromPipeline=$false)]
   [ValidateNotNullorEmpty()]
   [array]$Domains,
 
-  [Parameter(Position = 1, Mandatory = $False)]
+  [Parameter(Position = 1, Mandatory = $False, ValueFromPipeline=$false)]
   [string]$DnsServer = 'one.one.one.one'
 
 )
