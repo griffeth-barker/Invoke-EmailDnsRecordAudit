@@ -40,4 +40,12 @@ Here are some examples of how to run the script:
 .EXAMPLE
   # Check records for multiple domains, specifying DNS server by IP address
   .\Invoke-EmailSecurityAudit.ps1 -Domains @("griff.systems","domain.tld") -DnsServer "1.1.1.1"
+
+.EXAMPLE
+  # Pass an array as a variable
+  [array]$domainList = @(
+    "griff.systems",
+    "domain.tld"
+  )
+  .\Invoke-EmailSecurityAudit.ps1 -Domains $domainList -DnsServer "1.1.1.1"
 ```
