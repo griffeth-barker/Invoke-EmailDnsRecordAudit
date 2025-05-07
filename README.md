@@ -27,19 +27,19 @@ Here are some examples of how to run the script:
 ```PowerShell
 .EXAMPLE
   # Check records for a single domain, specifying DNS server by FQDN
- .\Invoke-EmailSecurityAudit.ps1 -Domains "griff.systems" -DnsServer "one.one.one.one"
+ .\Invoke-EmailDnsRecordAudit.ps1 -Domains "griff.systems" -DnsServer "one.one.one.one"
 
 .EXAMPLE
   # Check records for a single domain, specifying DNS server by IP address
-  .\Invoke-EmailSecurityAudit.ps1 -Domains "griff.systems" -DnsServer "1.1.1.1"
+  .\Invoke-EmailDnsRecordAudit.ps1 -Domains "griff.systems" -DnsServer "1.1.1.1"
 
 .EXAMPLE
   # Check records for multiple domains, specifying DNS server by FQDN
-  .\Invoke-EmailSecurityAudit.ps1 -Domains @("griff.systems","domain.tld") -DnsServer "one.one.one.one"
+  .\Invoke-EmailDnsRecordAudit.ps1 -Domains @("griff.systems","domain.tld") -DnsServer "one.one.one.one"
 
 .EXAMPLE
   # Check records for multiple domains, specifying DNS server by IP address
-  .\Invoke-EmailSecurityAudit.ps1 -Domains @("griff.systems","domain.tld") -DnsServer "1.1.1.1"
+  .\Invoke-EmailDnsRecordAudit.ps1 -Domains @("griff.systems","domain.tld") -DnsServer "1.1.1.1"
 
 .EXAMPLE
   # Pass an array as a variable
@@ -47,5 +47,5 @@ Here are some examples of how to run the script:
     "griff.systems",
     "domain.tld"
   )
-  .\Invoke-EmailSecurityAudit.ps1 -Domains $domainList -DnsServer "1.1.1.1"
+  .\Invoke-EmailDnsRecordAudit.ps1 -Domains $domainList -DnsServer "1.1.1.1"
 ```
