@@ -5,9 +5,11 @@
   This script looks up the MX, SPF, DMARC, and SOA records for the provided array of domains using the specified DNS server.
   It then exports the results to a CSV file.
 .PARAMETER Domains
-  An array of one or more domain names (e.g. "griff.systems") to check.
-.PARAMETER Domains
-  An string containing the fully-qualified domain name or IP address of the DNS server to use for the checks.
+  An mandatory array of one or more domain names (e.g. "griff.systems") to check.
+  This can be specified in-line, or stored as a variable and referenced -- the latter of which is recommended for larger arrays.
+.PARAMETER DnsServer
+  An optional string containing the fully-qualified domain name or IP address of the DNS server to use for the checks.
+  Default value is "one.one.one.one".
 .INPUTS
   None
 .OUTPUTS
