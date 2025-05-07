@@ -24,7 +24,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/griffeth-barker/Invoke
   
 ### Run the script
 Here are some examples of how to run the script:  
-```
+```PowerShell
 .EXAMPLE
   # Check records for a single domain, specifying DNS server by FQDN
  .\Invoke-EmailSecurityAudit.ps1 -Domains "griff.systems" -DnsServer "one.one.one.one"
